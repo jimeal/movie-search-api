@@ -10,7 +10,6 @@ function movieRank() {
     url: url,
     dataType: "json",
     success: function(data) {
-      // console.log(data)
 
       if(data.faultInfo) {
         $(".container .popup-body table").append(`
