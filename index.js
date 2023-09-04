@@ -1,8 +1,4 @@
-//const targetDate = $("#targetDateInput").val();
-// $("form").on("submit", function (event) {
-//   event.preventDefault();
-//   console.log( $( this ).serialize() );
-// });
+import $ from "jquery";
 
 const MOVIE_API_KEY = process.env.MOVIE_API_KEY
 function movieRank() {
