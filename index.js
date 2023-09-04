@@ -3,9 +3,11 @@
 //   event.preventDefault();
 //   console.log( $( this ).serialize() );
 // });
+
+const MOVIE_API_KEY = process.env.MOVIE_API_KEY
 function movieRank() {
   const targetDate = $("#targetDateInput").val();
-  const API_KEY = "f5eef3421c602c6cb7ea224104795888"
+  const API_KEY = MOVIE_API_KEY;
   const url = 'http://kobis.or.kr/kobisopenapi/webservice/rest/boxoffice/searchDailyBoxOfficeList.json?key='+ API_KEY+'&targetDt='+targetDate;
 
   $.ajax({
