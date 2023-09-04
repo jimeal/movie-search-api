@@ -1,0 +1,154 @@
+:root {
+  --primary-color: #3994FF;
+  --active-color: #83C961;
+  --text-color: #fff;
+  --bg-color: #000
+}
+.error {
+	margin-top: 30px;
+	font-size: 20px;
+	line-height: 1.5;
+	color: red;
+  font-size: 13px;
+}
+body {
+  margin: 0 auto;
+  padding: 0;
+  background-color: var(--bg-color);
+  width: 100%;
+  min-width: 320px;
+  max-width: 600px;
+  overflow-x: hidden;
+  color: var(--text-color);
+  box-sizing: border-box;
+}
+h1 {
+  margin: 0;
+}
+.container {
+  height: 100vh;
+}
+.container .inner {
+  height: inherit;
+  padding: 32px;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  justify-content:center;
+}
+.top-title {
+  margin-top: -90px;
+  margin-bottom: 80px;
+}
+.title {
+  font-size: 34px;
+  margin-bottom: 12px;
+}
+.logo-title {
+  color: var(--primary-color);
+  text-transform: uppercase;
+  text-align: center;
+  font-weight: bold;
+}
+.sub {
+  font-size: 14px;
+  color: var(--primary-color);
+  text-align: center;
+  display: block;
+}
+.search-input {
+  height: 46px;
+  font-size: 16px;
+  padding: 0 12px;
+  width: 100%;
+  box-sizing: border-box;
+  margin-bottom: 20px;
+}
+.discription {
+  line-height: 1.5;
+  font-size: 12px;
+  text-align: center;
+}
+.search-btn {
+  width: 130px;
+  height: 46px;
+  border-radius: 6px;
+  background-color: var(--primary-color);
+  font-size: 14px;
+  color: var(--text-color);
+  font-weight: bold;
+  margin: 50px auto 0;
+  display: block;
+}
+
+/* HEADER - RESULT */
+.popup-header {
+  position: relative;
+  height: 56px;
+}
+.popup-header .inner {
+  padding: 16px;
+}
+.popup-header .logo {
+  font-size: 20px;
+}
+.popup-header .popup-header--left {
+  position: absolute;
+  top: 54%;
+  left: 16px;
+  height: 24px;
+  transform: translateY(-50%);
+}
+
+.popup {
+  display: none;
+  position: fixed;
+  z-index: 100;
+  background-color: var(--bg-color);
+  left: 0;
+  right: 0;
+  bottom: 0;
+  top: 0;
+}
+.popup-body {
+  padding: 24px 16px;
+  width: 100%;
+  box-sizing: border-box;
+}
+table {
+  width: 100%;
+  font-size: 16px;
+}
+table th {
+  height: 40px;
+}
+table td {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  text-align: center;
+  min-height: 40px;
+}
+table td:first-of-type span {
+  display: block;
+  background-color: var(--primary-color);
+  width: 20px;
+  height: 20px;
+  line-height: 20px;
+  text-align: center;
+  border-radius: 2px;
+}
+table tr:nth-of-type(2) td:first-of-type span,
+table tr:nth-of-type(3) td:first-of-type span {
+  background-color: #83C961;
+}
+table tr td:nth-of-type(2) {
+  text-align: left;
+  padding: 0 12px;
+  font-weight: bold;
+  width: 66%;
+  line-height: 1.5;
+}
+table tr td:nth-of-type(3) {
+  font-size: 14px;
+  font-weight: normal;
+}

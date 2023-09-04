@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no">
+<title>영화 API</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- <div class="wrap">
+    <h1>일간 박스오피스 검색</h1>
+    <input type="text" id="targetDateInput" value="20230604">
+    <button id="targetDateInputButton">검색</button>
+    
+    <table>
+    </table>
+  </div> -->
+  <div class="container">
+    <div class="inner">
+      <div class="top-title">
+        <h1 class="title logo-title">boxoffice</h1>
+        <span class="sub">검색할 날짜를 형식에 맞게 입력해주세요</span>
+      </div>
+      <div>
+        <input type="text" id="targetDateInput" class="search-input" value="">
+        <p class="discription">공백이나 특수문자없이 숫자만 입력해주세요<br/>
+          어제날짜까지만 검색할 수 있습니다</p>
+        <button id="targetDateInputButton" class="search-btn" type="submit">검색</button>
+      </div>
+    </div>
+    <div class="popup">
+      <section class="popup-header">
+        <div class="inner">
+          <h1 class="logo logo-title">boxoffice</h1>
+          <div class="popup-header--left">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+              <g clip-path="url(#clip0_1_42)">
+                <path d="M15 6L9 12L15 18" stroke="#3994FF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+              </g>
+              <defs>
+                <clipPath id="clip0_1_42">
+                  <rect width="24" height="24" fill="white"/>
+                </clipPath>
+              </defs>
+            </svg>
+          </div>
+        </div>
+      </section>
+      <section class="popup-body">
+        <table></table>
+      </section>
+    </div>
+  </div>
+
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script type="text/javascript" src="./index.js"></script>
+</body>
+</html>
