@@ -45,7 +45,7 @@ h1 {
   justify-content:center;
 }
 .top-title {
-  margin-top: -90px;
+  margin-top: -10px;
   margin-bottom: 80px;
 }
 .title {
@@ -155,6 +155,10 @@ table td {
   padding-bottom: 12px;
   text-align: center;
   min-height: 40px;
+  width: 10%;
+}
+table td:first-of-type {
+  width: 10%;
 }
 table td:first-of-type span {
   display: block;
@@ -173,10 +177,11 @@ table tr td:nth-of-type(2) {
   text-align: left;
   padding: 0 12px;
   font-weight: 400;
-  width: 66%;
+  width: 64%;
   line-height: 1.5;
 }
 table tr td:nth-of-type(3) {
   font-size: 14px;
   font-weight: normal;
+  width: 25%;
 }
