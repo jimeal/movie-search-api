@@ -59,16 +59,11 @@ $(".popup-header--left").click(function() {
   $(window).prop("location", location.href);
 })
 
-// $("#targetDateInput").focus(function() {
-//   const targetDate = $("#targetDateInput").val();
-//   if(targetDate) {
-//     $("#targetDateInput").attr("value", "")
-//   }
-// })
-
 function inputKeypress (e) {
   let key = e.keyCode;
   if (key == 13) {
+    e.preventDefault();
+    document.querySelector('input').blur(); 
     $(".popup").show();
     movieRank();
   }
