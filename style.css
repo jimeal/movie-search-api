@@ -4,7 +4,6 @@
   font-weight: normal;
   font-style: normal;
 }
-
 :root {
   --primary-color: #3994FF;
   --active-color: #83C961;
@@ -28,7 +27,7 @@ body {
   overflow-x: hidden;
   color: var(--text-color);
   box-sizing: border-box;
-  font-family: 'Spoqa Han Sans', 'Spoqa Han Sans JP', 'Sans-serif';
+  font-family: 'Spoqa Han Sans Neo', 'sans-serif';
 }
 h1 {
   margin: 0;
