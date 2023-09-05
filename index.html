@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests">
 <meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no">
-<title>영화 API</title>
+<title>BOXOFFICE MOVIE SEARCH</title>
 <link href='//spoqa.github.io/spoqa-han-sans/css/SpoqaHanSans-kr.css' rel='stylesheet' type='text/css'>
 <link href='//spoqa.github.io/spoqa-han-sans/css/SpoqaHanSans-jp.css' rel='stylesheet' type='text/css'>
 <link rel="stylesheet" href="./style.css">
@@ -20,12 +20,10 @@
         </h1>
         <span class="sub">영화진흥위원회 박스오피스 영화 검색</span>
       </div>
-      <div>
-        <input type="text" id="targetDateInput" class="search-input" value="">
+        <input type="text" id="targetDateInput" class="search-input" value="" onfocus="this.value=''">
         <p class="discription">검색할 날짜를 형식에 맞게 입력해주세요<br/>공백이나 특수문자없이 숫자만 입력해주세요<br/>
           어제날짜까지만 검색할 수 있습니다</p>
         <button id="targetDateInputButton" class="search-btn" type="submit">검색</button>
-      </div>
     </div>
     <div class="popup">
       <section class="popup-header">
@@ -35,7 +33,16 @@
         </div>
       </section>
       <section class="popup-body">
-        <table></table>
+        <table>
+          <caption class="sr-only">영화진흥위원회 박스오피스 영화 검색</caption>
+          <colgroup>
+            <col class="movie-lanking" />
+            <col class="movie-name" />
+            <col class="movie-date" />
+          </colgroup>
+          <thead></thead>
+          <tbody></tbody>
+        </table>
       </section>
     </div>
   </div>

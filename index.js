@@ -12,7 +12,7 @@ function movieRank() {
     success: function(data) {
 
       if(data.faultInfo) {
-        $(".container .popup-body table").append(`
+        $(".popup-body table tbody").append(`
           <tr>
             <td class="error">${data.faultInfo.message}</td>
           </tr>
@@ -21,7 +21,7 @@ function movieRank() {
       }else {
         const rank = data.boxOfficeResult.dailyBoxOfficeList;
 
-        $(".container .popup-body table").html(
+        $(".popup-body table thead").html(
           `
             <tr>
               <th>순위</th>
@@ -32,7 +32,7 @@ function movieRank() {
         )
 
         for(let i = 0; i < rank.length; i++) {
-          $(".container .popup-body table").append(
+          $(".popup-body table tbody").append(
             `
               <tr>
                 <td><span>${rank[i].rank}</span></td>
@@ -65,11 +65,15 @@ $(".popup-header--left").click(function() {
 //     $("#targetDateInput").attr("value", "")
 //   }
 // })
-$("#targetDateInput").keypress(function(e) {
-  if(e.keyCode == 13) {
-    movieRank()
+
+function inputKeypress (e) {
+  let key = e.keyCode;
+  if (key == 13) {
+    $(".popup").show();
+    movieRank();
   }
-})
+}
+document.querySelector("#targetDateInput").addEventListener("keyup", inputKeypress)
 
 function inputChangeValue() {
   const inputEl = document.querySelector("#targetDateInput");
