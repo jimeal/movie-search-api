@@ -1,6 +1,12 @@
 import $ from "jquery";
 
-const MOVIE_API_KEY = process.env.MOVIE_API_KEY
+const MOVIE_API_KEY = process.env.MOVIE_API_KEY;
+
+window.addEventListener('load', function() {
+  document.body.style.height = (document.documentElement.clientHeight + 5) + 'px';
+  setTimeout(scrollTo, 0, 0, 1);
+}, false);
+
 function movieRank() {
   const targetDate = $("#targetDateInput").val();
   const API_KEY = MOVIE_API_KEY;
@@ -81,3 +87,5 @@ function inputChangeValue() {
   inputEl.value = year + month + day - 1;
 }
 inputChangeValue()
+
+
