@@ -3,7 +3,7 @@ import $ from "jquery";
 const MOVIE_API_KEY = process.env.MOVIE_API_KEY;
 
 window.addEventListener('load', function() {
-  document.body.style.height = (document.documentElement.clientHeight + 5) + 'px';
+  // document.body.style.height = (document.documentElement.clientHeight + 5) + 'px';
   setTimeout(scrollTo, 0, 0, 1);
 }, false);
 
